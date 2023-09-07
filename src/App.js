@@ -1,6 +1,12 @@
+import Hero from "./components/Hero";
+import Navbar from "./components/Navbar";
+
 function App() {
   return (
-    <h1>ghfdj</h1>
+    <>
+    <Navbar />
+    <Hero />
+    </>
   );
 }
 
