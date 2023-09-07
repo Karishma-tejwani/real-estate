@@ -1,5 +1,10 @@
 import React from 'react';
-import { styled, Box, Container, Typography } from '@mui/material';
+import {
+  styled,
+  Box,
+  Container,
+  Typography,
+} from '@mui/material';
 import CustomButton from './CustomButton';
 import home from '../assets/home.jpeg';
 
@@ -30,7 +35,7 @@ const Hero = () => {
     <Box sx={{ backgroundColor: '#c5cae9', minHeight: '80vh' }}>
       <Container>
         <CustomBox>
-          <Box sx={{ flex: '1' }}>
+          <Box flex="1">
             <Typography
               variant="body2"
               sx={{
@@ -59,11 +64,14 @@ const Hero = () => {
               heroBtn={true}
             />
           </Box>
-          <Box sx={{ flex: '2' }}>
+          <Box flex="2" marginTop="8%" marginBottom="2%">
             <img
               src={home}
               alt="home"
-              style={{ maxWidth: '100%', marginTop: '25%' }}
+              style={{
+                width: '100%',
+                height: 'auto',
+              }}
             />
           </Box>
         </CustomBox>
