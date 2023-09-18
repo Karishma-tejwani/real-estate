@@ -12,12 +12,12 @@ const CustomButton = ({
   const CustomBtn = styled(Button)(({ theme }) => ({
     backgroundColor: backgroundColor,
     color: color,
-    fontWeight: 700,
-    fontSize: '20px',
+    fontWeight: 600,
+    fontSize: '18px',
     cursor: 'pointer',
     padding: '0.25rem 1.5rem',
     borderRadius: '5px',
-    textTransform: 'uppercase',
+    textTransform: 'Capitalize',
     display: 'flex',
     border: '2px solid transparent',
     '&:hover': {

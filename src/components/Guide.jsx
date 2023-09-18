@@ -3,6 +3,7 @@ import ShoppingCartCheckoutOutlinedIcon from '@mui/icons-material/ShoppingCartCh
 import HomeWorkOutlinedIcon from '@mui/icons-material/HomeWorkOutlined';
 import PaidOutlinedIcon from '@mui/icons-material/PaidOutlined';
 import { ArrowRightAlt } from '@mui/icons-material';
+import CustomButton from './CustomButton';
 
 const Guide = () => {
   const MainBox = styled(Box)(({ theme }) => ({
@@ -132,6 +133,12 @@ const Guide = () => {
           </Box>
         </InnerBox>
       </MainBox>
+      <CustomButton
+        backgroundColor="#1565c0"
+        color="#fff"
+        btnText="See full Guides"
+        guideBtn={true}
+      />
     </Box>
   );
 };
