@@ -45,11 +45,11 @@ const Guide = () => {
         style={{
           width: '10%',
           height: '5px',
-          backgroundColor: '#212121',
+          backgroundColor: '#1a237e',
           margin: '0 auto',
         }}
       ></div>
-      <Typography variant="h3" sx={{ my: 3 }}>
+      <Typography variant="h3" sx={{ my: 3, color: '#1a237e' }}>
         How it works?
       </Typography>
       <Typography variant="body2" sx={{ textAlign: 'center', color: 'gray' }}>
