@@ -68,7 +68,9 @@ const Companies = () => {
     <Box>
       <CustomContainer>
         <CustomBox>
-          <Typography variant="h4">Elite.</Typography>
+          <Typography variant="h4" style={{ color: '#1a237e' }}>
+            Elite.
+          </Typography>
           <Typography
             variant="body2"
             sx={{ color: 'gray', fontWeight: 'bold' }}
