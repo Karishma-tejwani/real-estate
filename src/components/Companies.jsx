@@ -5,6 +5,8 @@ import meta from '../assets/meta.png';
 import google from '../assets/google.png';
 import microsoft from '../assets/micorsoft.png';
 import slack from '../assets/slack.png';
+import cisco from '../assets/cisco.png';
+import Marquee from 'react-fast-marquee';
 
 const companyLogos = [
   {
@@ -26,6 +28,10 @@ const companyLogos = [
   {
     id: 5,
     image: slack,
+  },
+  {
+    id: 6,
+    image: cisco,
   },
 ];
 
@@ -94,19 +100,21 @@ const Companies = () => {
           </Typography>
         </Box>
       </CustomContainer>
-      <Box>
-        <InnerContainer>
-          {companyLogos.map((item) => (
-            <Container key={item.id}>
-              <img
-                src={item.image}
-                alt="Company Logos"
-                style={{ width: '100%' }}
-              />
-            </Container>
-          ))}
-        </InnerContainer>
-      </Box>
+      <Marquee>
+        <Box>
+          <InnerContainer>
+            {companyLogos.map((item) => (
+              <Container key={item.id}>
+                <img
+                  src={item.image}
+                  alt="Company Logos"
+                  style={{ width: '100%' }}
+                />
+              </Container>
+            ))}
+          </InnerContainer>
+        </Box>
+      </Marquee>
     </Box>
   );
 };
